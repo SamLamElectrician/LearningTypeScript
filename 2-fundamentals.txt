@@ -1,0 +1,9 @@
+JavaScript
+-Number, String, Boolean, null, undefined, object
+
+TypeScript
+-Any -->
+-Unknown -->
+-Never -->
+-Enum -->
+-Tuple -->

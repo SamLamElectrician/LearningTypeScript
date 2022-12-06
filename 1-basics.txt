@@ -1,0 +1,54 @@
+* = additional notes
+
+TypeScript
+- Programming language made by microsoft to improve JS short comings
+- Built on top of JS file
+- JS with Type Checking
+- Code passes at compiler and errors are caught
+- Prevents errors at runtime, less need for unit test
+
+
+Benefits
+- Static Typing --> knowing the type of variable at declaration
+- Code Completion
+- Refactoring
+- Shorthand Notation
+- Best for medium to large projects
+
+*Dynamic Typing is variable being determined at runtime --> Can lead to errors due to type errors --> Example: Using a math method on a string
+
+Drawbacks
+- Compliation --> compliation step so browser can understand the code --> Transpilation
+- Discipline in Coding
+
+Transpilation
+- Process of compiling TypeScript
+- .ts file --> runs through compiler --> creates a js file
+
+Setting up the Dev environment
+- Node.js --> shell --> npm i -g typescript --> installs typescript --> tsc -v --> shows the version of typescript
+- every typescript file ends with .ts
+- tsc fileName in terminal to compile
+- tsc --init --> creates a config file
+    -Target
+        - changes JS type --> es5, es6, 2016 -->2016 is safe for most browsers
+    -Module
+        - rootDir --> changes root directory --> good practices is to use a source folder
+    -Emit
+        -outDir --> sets compiled js file locations
+        -removeComments --> removes comments from ts file --> generated JS file shorter
+        -noEmitOnError --> if error, no Js file is compiled --> always have this
+        -sourceMap --> Enables debugging --> how each line in ts file maps to js
+- tsc --> without fileName will run now
+        
+*Note: You may have to update previous packagees if you get error TS2403
+1. npm i -g npm-check-updates
+2. ncu -u 
+3. npm install
+
+Debugging in typescript
+- once souce map is enabled go to debug in vscode on sidebar 
+- create a launch.json file using node.js
+- add "preLaunchTask": "tsc: build - tsconfig.json" to the launch json file
+- shortcut to launch is f5
+- shortcut to step over is f10
