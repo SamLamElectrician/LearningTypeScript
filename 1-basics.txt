@@ -30,15 +30,17 @@ Setting up the Dev environment
 - every typescript file ends with .ts
 - tsc fileName in terminal to compile
 - tsc --init --> creates a config file
-    -Target
+    Target
         - changes JS type --> es5, es6, 2016 -->2016 is safe for most browsers
-    -Module
+    Module
         - rootDir --> changes root directory --> good practices is to use a source folder
-    -Emit
+    Emit
         -outDir --> sets compiled js file locations
         -removeComments --> removes comments from ts file --> generated JS file shorter
         -noEmitOnError --> if error, no Js file is compiled --> always have this
         -sourceMap --> Enables debugging --> how each line in ts file maps to js
+    Type Checking
+        -noUnusedParameters --> creates errors if unused params in functions
 - tsc --> without fileName will run now
         
 *Note: You may have to update previous packagees if you get error TS2403
@@ -52,3 +54,6 @@ Debugging in typescript
 - add "preLaunchTask": "tsc: build - tsconfig.json" to the launch json file
 - shortcut to launch is f5
 - shortcut to step over is f10
+
+tsc --> compiles ts to Js
+node /filelocation -->execute JS code

@@ -2,8 +2,10 @@ JavaScript
 -Number, String, Boolean, null, undefined, object
 
 TypeScript
--Any -->
--Unknown -->
--Never -->
--Enum -->
--Tuple -->
+-Any --> Any kind of Value, no initial value using key word Any
+-Unknown --> restrictive value of any, anything assignable to unknown, cant assign unknown to an already typed variable(only unknowns, any can be reassigned unknown),
+-Never --> Values that never occur using key word never
+-void --> no data, can have undefined or null as value using keyword void
+-Enum --> List of related constants using keyword enum --> 3 types: numeric, string, heterogeneous(mix)
+-Tuple --> fixed length array using [typeof, typeof]
+-Union --> more than one data type for variable or function paramater -->  written as(type1 | type2)
