@@ -1,0 +1,41 @@
+Type aliases
+- new name for type 
+- useful for objects and being DRY
+- see src/4-objects
+
+Union 
+- Give a variable multiple types for a variable or function param
+- see src/5-objects
+
+Intersection
+- type that merges several types into one type using & operator
+- see src/6-Intersection.ts
+
+
+Type Narrowing
+- Narrowing type to be more process in terms of union or optional type
+- use if or switch statements along with typeof
+- use in operator to see specific property
+- see src/5-union.ts
+
+Literal Type
+- Used if you need exact values to a variable
+- A type alias would be used to define the literal type
+- see src/7-literal-type.ts 
+
+Nullable Types 
+- typescript is strict about using null types
+- by pass it with adding a union operator within the function and type narrowing 
+
+Unknown Type
+- restrictive value of any
+- anything assignable to unknown
+- cant assign unknown to an already typed variable(only unknowns, any can be reassigned unknown)
+
+Never Type
+-Values that never occur using key word never
+
+Optional Chaining
+- Checks for propety of null or undefined
+- uses ?.
+

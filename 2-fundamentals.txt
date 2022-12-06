@@ -9,3 +9,5 @@ TypeScript
 -Enum --> List of related constants using keyword enum --> 3 types: numeric, string, heterogeneous(mix)
 -Tuple --> fixed length array using [typeof, typeof]
 -Union --> more than one data type for variable or function paramater -->  written as(type1 | type2)
+
+see src> 2-3

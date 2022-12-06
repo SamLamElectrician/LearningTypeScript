@@ -41,6 +41,8 @@ Setting up the Dev environment
         -sourceMap --> Enables debugging --> how each line in ts file maps to js
     Type Checking
         -noUnusedParameters --> creates errors if unused params in functions
+        -noImplicitReturns --> checks to see all code paths return a value
+        -noUnusedLocals --> checks for unused variables
 - tsc --> without fileName will run now
         
 *Note: You may have to update previous packagees if you get error TS2403
@@ -57,3 +59,5 @@ Debugging in typescript
 
 tsc --> compiles ts to Js
 node /filelocation -->execute JS code
+
+See src/1-index.ts
